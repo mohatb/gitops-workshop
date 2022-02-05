@@ -11,7 +11,7 @@ resource "azurerm_kubernetes_cluster" "primary" {
     enable_auto_scaling = true
     min_count = 1
     max_count = 3
-    os_sku = "CBLMariner"
+    os_sku = "Ubuntu"
   }
 
   identity {
