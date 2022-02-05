@@ -10,10 +10,14 @@ output "resource_group" {
   value = var.resource_group
 }
 
-output "User_nodepool1" {
-  value = azurerm_kubernetes_cluster_node_pool.primary.name
+output "dev_nodepool" {
+  value = azurerm_kubernetes_cluster_node_pool.dev.name
 }
 
-output "User_nodepool2" {
-  value = azurerm_kubernetes_cluster_node_pool.secondary.name
+output "staging_nodepool" {
+  value = azurerm_kubernetes_cluster_node_pool.staging.name
+}
+
+output "prod_nodepool" {
+  value = azurerm_kubernetes_cluster_node_pool.prod.name
 }
